@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><title>SOL</title><defs><radialGradient id="sol-sun" cx="36%" cy="32%" r="70%">
+<stop offset="0" stop-color="#FFF1DC"/><stop offset=".28" stop-color="#FFB15C"/><stop offset=".62" stop-color="#FF3B1F"/><stop offset="1" stop-color="#6E1206"/></radialGradient>
+<radialGradient id="sol-glow"><stop offset=".45" stop-color="#FF3B1F" stop-opacity=".45"/><stop offset=".75" stop-color="#FF3B1F" stop-opacity=".12"/><stop offset="1" stop-color="#FF3B1F" stop-opacity="0"/></radialGradient></defs><rect width="64" height="64" rx="14" fill="#0B0B0B"/><circle cx="32.0" cy="32.0" r="17.9" fill="url(#sol-sun)"/><circle cx="32.0" cy="32.0" r="21.8" fill="none" stroke="#FF7A2E" stroke-width="1.9"/></svg>
