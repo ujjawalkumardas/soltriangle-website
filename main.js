@@ -1,9 +1,3 @@
-// TODO: paste the Dodo Payments checkout URL for Kaho here (e.g. the product's payment link). Until then, "Get Kaho" scrolls to the Kaho section.
-const KAHO_CHECKOUT_URL = "";
-if (KAHO_CHECKOUT_URL) {
-  document.querySelectorAll('[data-checkout="kaho"]').forEach((a) => { a.href = KAHO_CHECKOUT_URL; a.target = "_blank"; a.rel = "noopener"; });
-}
-
 // Header background once the page scrolls
 const nav = document.querySelector('.nav');
 const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
@@ -24,12 +18,12 @@ const SHADE_SUN = 'radial-gradient(circle at 36% 32%, #FFF1DC 0%, #FFB15C 28%, #
 const planets = [
   { hi: 'Surya', en: 'Sun', code: '00', sun: true, status: 'The centre', cls: '', href: '#system', cta: 'Meet Soltriangle',
     tex: SHADE_SUN },
-  { hi: 'Budh', en: 'Mercury', code: '01', product: 'kaho', status: 'In orbit', cls: 'ok', href: '#budh', cta: 'Explore Kaho',
+  { hi: 'Budh', en: 'Mercury', code: '01', product: 'kaho', status: 'In orbit', cls: 'ok', href: '#system', cta: 'Explore Kaho',
     tex: 'linear-gradient(140deg, #2B2A28 0% 12%, #8C877E 17% 26%, #E2DCCF 31% 40%, #55514B 45% 55%, #B9B2A6 60% 69%, #1F1F1F 74% 83%, #9A948A 88% 97%)' },
   { hi: 'Shukra', en: 'Venus', code: '02', status: 'Unformed', tex: 'linear-gradient(120deg, #F6E3B4 0% 12%, #D9A35B 17% 26%, #FFF1D6 31% 40%, #B8743A 45% 55%, #F2C987 60% 69%, #7A4A22 74% 83%, #F6E3B4 88% 97%)' },
   { hi: 'Prithvi', en: 'Earth', code: '03', status: 'Unformed', tex: 'linear-gradient(150deg, #0F3D4A 0% 12%, #2F7F86 17% 26%, #D7E3D2 31% 40%, #1D5A3A 45% 55%, #79A7A6 60% 69%, #0B2A36 74% 83%, #C9B98A 88% 97%)' },
   { hi: 'Mangal', en: 'Mars', code: '04', status: 'Unformed', tex: 'linear-gradient(130deg, #FFD0B0 0% 12%, #E8432A 17% 26%, #8E1A10 31% 40%, #FF8A5C 45% 55%, #C2301C 60% 69%, #3A0A06 74% 83%, #FF6A3D 88% 97%)' },
-  { hi: 'Guru', en: 'Jupiter', code: '05', product: 'namaste', status: 'Coming soon', cls: 'soon', href: '#guru', cta: 'Namaste',
+  { hi: 'Guru', en: 'Jupiter', code: '05', product: 'namaste', status: 'Coming soon', cls: 'soon', href: '#system', cta: 'Namaste',
     tex: 'linear-gradient(172deg, #FFE3CC 0% 10%, #E9A86B 15% 23%, #FFF1DC 27% 35%, #C8652F 40% 48%, #F2C79A 52% 60%, #8E3A1C 65% 73%, #E9A86B 77% 85%, #B4542A 90% 98%)' },
   { hi: 'Shani', en: 'Saturn', code: '06', ring: true, status: 'Unformed', tex: 'linear-gradient(168deg, #F2E2B8 0% 12%, #D6B36E 17% 26%, #F7ECD0 31% 40%, #B88D4A 45% 55%, #EFD9A4 60% 69%, #8F6A33 74% 83%, #E9CF93 88% 97%)' },
   { hi: 'Arun', en: 'Uranus', code: '07', status: 'Unformed', tex: 'linear-gradient(160deg, #E6FBFB 0% 14%, #7FD3D6 20% 30%, #BFEFF0 36% 47%, #3E9CA3 53% 64%, #D4F6F6 70% 80%, #5BB7BD 86% 97%)' },
